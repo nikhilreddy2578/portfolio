@@ -1,8 +1,10 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/portfolio/', // Replace with your repository name
   build: {
-    minify: "terser",
-  },
-});
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false
+  }
+})
